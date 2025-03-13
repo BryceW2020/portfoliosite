@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <title>Custom Site Hoem Page</title>
+        <link rel="stylesheet" href="customsitecss.css">
+        <a href="customsitehomepage.html"><button>Home</button></a>
+        <a href="customsiteaboutpage.html"><button>About</button></a>
+        <a href="customsitecontactpage.html"><button>Contact</button></a>
+        <h1>Welcome!</h1>
+    </head>
+
+    <body>
+        <div class = "body1">
+            <main>
+                <section>
+                    <p>
+                        Welcome to my custom website. I am currently building and testing this site for future deployment!
+                    </p>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

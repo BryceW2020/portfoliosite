@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <title>Custom Site About</title>
+        <link rel="stylesheet" href="customsitecss.css">
+        <a href="homepagecustomsite.html"><button>Home</button></a>
+        <a href="aboutpagecustomsite.html"><button>About</button></a>
+        <a href="contactpagecustomsite.html"><button>Contact</button></a>
+        <h1>About Me!</h1>
+    </head>
+
+    <body>
+        <div class="body2">
+        <main>
+            <section>
+                <p>
+                    Below you will find out all about me!
+                </p>
+            </section>
+        </main>
+        </div>
+    </body>
+</html>
