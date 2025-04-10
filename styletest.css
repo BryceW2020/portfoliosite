@@ -1,0 +1,214 @@
+/**main CSS across pages**/
+
+.body {
+    background-image: linear-gradient( #fce5cd, #C9D6FF);
+    text-align: center;
+    width: 90%;
+    right: 90%;
+    left:90%;
+    top: 30%;
+    bottom: 70%;
+}
+
+/**home page body**/
+.homepagebody {
+    background-color: white;
+    opacity: 70%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: -5%;
+    padding: 10px;
+}
+
+/**home page footer**/
+.homepagefooter {
+    margin-top: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+}
+
+/**about page body**/
+.aboutpagebody {
+    background-color: white;
+    opacity: 70%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: -5%;
+    padding: 10px;
+}
+
+/**about page footer**/
+.aboutpagefooter {
+    margin-top: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+}
+
+/**project page body**/
+.projectpagebody {
+    background-color: white;
+    opacity: 70%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: -5%;
+    padding: 10px;
+}
+
+/**project page footer**/
+.projectpagefooter {
+  margin-top: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+}
+
+/**contact page body**/
+.contactpagebody {
+  background-color: white;
+  opacity: 70%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: -5%;
+  padding: 10px;
+}
+
+/**contact page footer**/
+.contactpagefooter {
+  margin-top: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+}
+
+/**----------------------------------------------------------------------------------------------------------------------------------------------------------------------**/
+/**budget tracker**/
+.budgettrackerbody {
+text-align: center;
+margin-top: 16%;
+margin-left: 20%;
+margin-right: -5%;
+}
+
+.budget-tracker {
+  border-collapse: collapse;
+  min-width: 750px;
+
+}
+
+.budget-tracker *{
+  font-family: monospace;
+}
+
+.budget-tracker th {
+  text-align: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+}
+
+.budget-tracker td {
+  padding: 5px;
+}
+
+.input,
+.delete-entry {
+  height: 30px;
+  font-size: 13px;
+  padding: 0px 10px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #bbbbbb;
+}
+
+.delete-entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  background: none;
+  color: red;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-entry:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.controls {
+  text-align: center;
+}
+
+.summary {
+  text-align: center;
+}
+
+.budgettrackerfooter {
+  margin-top: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+}
+
+.backtoprojectbutton {
+  margin-top: 0;
+  margin-left: 5%;
+  margin-right: -5%;
+  background-color: #fce5cd;
+  opacity: 99%;
+}
+/**----------------------------------------------------------------------------------------------------------------------------------------------------------------------**/
+/**discord open ai video**/
+.discopenaivideobody {
+  background-color: white;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: -5%;
+  padding: 10px;
+}
+/**----------------------------------------------------------------------------------------------------------------------------------------------------------------------**/
+/**Nav Section**/
+
+    ul {
+        list-style-type: none;
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-right: -5%;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+        text-align: center;
+        margin: auto;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+      }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <a href="projects.html"><button>Back to Projects Page</button></a>
+
+        <link rel="stylesheet" href="styletest.css">
+
+    </head>
+
+    <body class="body">
+
+        <div class="discopenaicode">
+
+        <p>
+
+           Below is the JavaScript Code used to build the Discord Open Ai Chat Bot!
+
+        </p>
+
+
+        <p type="text">
+
+            require('dotenv/config');</br>
+const { Client, IntentsBitField } = require('discord.js');</br>
+const OpenAI = require('openai'); // Import the OpenAI class directly</br>
+</br>
+// All Intents</br>
+const client = new Client({</br>
+    intents: [</br>
+        IntentsBitField.Flags.Guilds,</br>
+        IntentsBitField.Flags.GuildMembers,</br>
+        IntentsBitField.Flags.GuildMessages,</br>
+        IntentsBitField.Flags.MessageContent,</br>
+    ],</br>
+});</br>
+
+// Client on and OpenAI connection</br>
+client.on('ready', (c) => {</br>
+    console.log('The Bot is Online');</br>
+});</br>
+</br>
+// Initialize OpenAI API</br>
+const openai = new OpenAI({</br>
+    apiKey: process.env.OPENAI_API_KEY, // Pass the API key directly</br>
+});</br>
+</br>
+client.on('messageCreate', async (message) => {</br>
+    // Ignore messages from the bot itself</br>
+    if (message.author.bot) return;</br>
+</br>
+    // Log message contents</br>
+    console.log(`Message from ${message.author.tag}: ${message.content}`);</br>
+</br>
+    // Create conversation log</br>
+    let conversationLog = [{ role: 'system', content: "You are a friendly Chat bot!" }];</br>
+</br>
+    // Add user message to conversation log</br>
+    conversationLog.push({</br>
+        role: 'user',</br>
+        content: message.content,</br>
+    });</br>
+</br>
+    // Send typing indicator</br>
+    await message.channel.sendTyping();</br>
+</br>
+    try {</br>
+        // Get response from OpenAI</br>
+        const response = await openai.chat.completions.create({</br>
+            model: "gpt-3.5-turbo",</br>
+            messages: conversationLog,</br>
+        });</br>
+    </br>
+        // Reply with the generated message</br>
+        const reply = response.choices[0].message.content;</br>
+        await message.reply(reply);</br>
+    </br>
+        // Log the reply</br>
+        console.log(`Bot replied: ${reply}`);</br>
+    } catch (error) {</br>
+        console.error('Error generating response:', error);</br>
+        await message.reply("Sorry, I encountered an error while processing your request.");</br>
+    }</br>
+});</br>
+</br>
+// Log in to Discord</br>
+client.login(process.env.TOKEN);</br>
+
+        </p>
+    
+    </div>
+
+    </body>
+
+</html>
+
+
