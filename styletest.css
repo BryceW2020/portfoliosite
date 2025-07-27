@@ -38,6 +38,11 @@
     padding: 10px;
 }
 
+.aboutpagetext {
+    text-size: 20px;
+    font-style: italic;
+} 
+
 /**about page footer**/
 .aboutpagefooter {
     margin-top: 99%;
