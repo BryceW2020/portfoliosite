@@ -1,0 +1,28 @@
+.header {
+    margin: auto;
+    width: 30%;
+    font-size: 30px;
+    color: black;
+}
+
+.shoppingitemscss {
+    width: 30%%;
+    margin: auto;
+    text-align: center;
+    color: green;
+    font-size: 30px;
+}
+
+.additemandquatity {
+    width: 40%;
+    font-size: 30px;
+margin: auto;
+    text-align: center;
+}
+
+.additembutton {
+    width: 40%;
+    font-size: 30px;
+margin: auto;
+    text-align: center;
+}
