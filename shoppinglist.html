@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="shoppinglist.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+
+        <!--Google Font Connect Start-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap" rel="stylesheet">
+        <!--Google Font Connect End-->
+
+        <title>Document</title>
+
+        <div class="topnav">
+            <a class="active" href="shoppinglist.html">Shopping List</a>
+            <a href="spicelist.html">Spice List</a>
+            <a href="meatlist.html">Meat List</a>
+            <a href="cleaningsupplies.html">Cleaning List</a>
+        </div>
+    </head>
+    <body>
+    <div class="header">
+        <h2>Shopping List</h2>
+    </div>
+    <div class="shoppingitemscss">
+        <ul id="shoppingitems">
+         
+        </ul>
+    </div>
+
+    <div class="additemandquatity">
+        <input type="text" placeholder="Add Item" id="shoppinglist-text-input" />
+        <input type="number" placeholder="Add Quantity" id="shoppinglist-quantity-input" />
+    </div>
+<div class="additembutton">
+        <button id="addItem">Add Item</button>
+</div>
+        <script src="shoppinglist.js"></script>
+        <script src="shoppinglist3firebase.js"></script>
+    </body>
+</html>
